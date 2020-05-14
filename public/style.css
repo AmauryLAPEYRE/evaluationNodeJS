@@ -1,0 +1,115 @@
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0px;
+}
+
+div#change_username {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+section#chatroom {
+    border: 1px solid lightgrey;
+    height: 85%;
+    overflow: auto;
+    width: 50%;
+}
+
+section#input_zone {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input#username {
+    font-family: 'Comfortaa', sans-serif;
+    border-radius: 30px;
+    background: #e1e1e1;
+    height: 30px;
+    font-size: 13px;
+    border: none;
+    padding: 5px;
+}
+
+input#message {
+    width: 80%;
+    font-family: 'Comfortaa', sans-serif;
+    border-radius: 30px;
+    background: #e1e1e1;
+    height: 30px;
+    font-size: 13px;
+    border: none;
+    padding: 5px;
+}
+
+button#send_message {
+    background: #0084ff;
+    color: white;
+    border-radius: 30px;
+    height: 30px;
+    border: none;
+    margin: 5px;
+}
+button#send_username {
+    background: #0084ff;
+    color: white;
+    border-radius: 30px;
+    height: 30px;
+    border: none;
+    margin: 5px;
+}
+
+p.message {
+    height: 40px;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 1vh;
+}
+
+.message {
+    background-color: #0084ff;
+    max-width: 400px;
+    border-radius: 1em;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-size: 13px;
+    font-family: 'Comfortaa', sans-serif;
+}
+.message p {
+    margin: 0;
+}
+.datetime {
+    text-align: right;
+}
